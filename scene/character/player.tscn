@@ -2,11 +2,12 @@
 
 [ext_resource type="Script" uid="uid://bext0k2vqq3d8" path="res://script/Player.cs" id="1_hovdd"]
 [ext_resource type="Texture2D" uid="uid://bou2xjb8qt38a" path="res://resource/picture/cod.png" id="2_5utgv"]
+[ext_resource type="Script" uid="uid://06h64gbk7js7" path="res://script/smoothCamera2d.cs" id="3_5utgv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vqm7w"]
 size = Vector2(13, 14)
 
-[node name="Player" type="CharacterBody2D" unique_id=162853478]
+[node name="Player_CharacterBody2D" type="CharacterBody2D" unique_id=162853478]
 script = ExtResource("1_hovdd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=989314169]
@@ -16,3 +17,6 @@ shape = SubResource("RectangleShape2D_vqm7w")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=439048464]
 texture_filter = 1
 texture = ExtResource("2_5utgv")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1385470181]
+script = ExtResource("3_5utgv")

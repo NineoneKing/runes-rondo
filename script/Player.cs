@@ -35,7 +35,7 @@ public partial class Player : CharacterBody2D
 		}
 		else
 		{
-			velocity.X = Mathf.MoveToward(Velocity.X, 0, 20);
+			velocity.X = Mathf.MoveToward(Velocity.X, 0, 50);
 		}
 	
 		Velocity = velocity;
