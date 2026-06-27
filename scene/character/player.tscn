@@ -20,6 +20,8 @@ texture = ExtResource("2_5utgv")
 position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_hovdd")
 
+[node name="cameraVibration" type="Node2D" parent="CharacterBody2D" unique_id=207380508]
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=408535763]
 script = ExtResource("3_5utgv")
 nodePath = NodePath("../CharacterBody2D")
